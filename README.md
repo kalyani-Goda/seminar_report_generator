@@ -30,6 +30,7 @@ The system automatically generates structured academic seminar reports from user
     ┃ ┣ 📜 prompts.py
     ┃ ┗ 📜 rag_setup.py
     ┣ 📂 streamlit_app # Web interface
+    ┃ ┣ 📜 app.py
     ┣ 📜 requirements.txt
     ┣ 📜 pyproject.toml
     ┗ 📜 .env
