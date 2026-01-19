@@ -19,19 +19,19 @@ The system automatically generates structured academic seminar reports from user
 
 ## 🏗️ Project Architecture
 
-📦 seminar-report-generator
-┣ 📂 config # Configuration
-┣ 📂 notebooks # Experiments
-┣ 📂 src # Source code
-┃ ┣ 📜 graph_builder.py
-┃ ┣ 📜 nodes.py
-┃ ┣ 📜 models.py
-┃ ┣ 📜 prompts.py
-┃ ┗ 📜 rag_setup.py
-┣ 📂 streamlit_app # Web interface
-┣ 📜 requirements.txt
-┣ 📜 pyproject.toml
-┗ 📜 README.md
+    📦 seminar-report-generator
+    ┣ 📂 config # Configuration
+    ┣ 📂 notebooks # Experiments
+    ┣ 📂 src # Source code
+    ┃ ┣ 📜 graph_builder.py
+    ┃ ┣ 📜 nodes.py
+    ┃ ┣ 📜 models.py
+    ┃ ┣ 📜 prompts.py
+    ┃ ┗ 📜 rag_setup.py
+    ┣ 📂 streamlit_app # Web interface
+    ┣ 📜 requirements.txt
+    ┣ 📜 pyproject.toml
+    ┗ 📜 README.md
 
 
 
