@@ -5,13 +5,15 @@ The system automatically generates structured academic seminar reports from user
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🧠 **LangGraph-based workflow** for controlled multi-step generation
-- 📚 **Retrieval-Augmented Generation (RAG)** using vector embeddings
-- ✍️ Section-wise academic report generation
-- 🔁 Iterative refinement using graph-based execution
-- 🎛️ Streamlit UI for interactive usage
+- **Multi-Agent Workflow**: Planning, research, writing, and validation agents
+- **Hybrid RAG**: Combine local PDFs with web search
+- **Smart State Management**: LangGraph-powered workflow orchestration
+- **User-Friendly Interface**: Streamlit web app with PDF upload
+- **Export Options**: Download as Markdown or PDF
+- **Async Processing**: Fast parallel operations
+
 
 ---
 
@@ -84,6 +86,33 @@ pip install -r requirements.txt
 ```bash
 streamlit run streamlit_app/app.py
 ```
+## 🏗️ Architecture
+
+```mermaid
+graph TD
+    A[User Input] --> B[Plan Outline]
+    B --> C{Brainstorm Section}
+    C --> D[Research RAG + Web]
+    D --> E[Write Section]
+    E --> F{Validate}
+    F -- Approved --> G[Save & Next]
+    F -- Needs Revision --> E
+    G --> H{All Sections Done?}
+    H -- No --> C
+    H -- Yes --> I[Synthesize Full Paper]
+    I --> J[Download]
+```
+
+### Workflow Logic
+
+1. **Plan** – Generate a 5-section outline from the topic
+2. **Brainstorm** – Extract key points per section
+3. **Research** – Combine Tavily web search + RAG retrieval
+4. **Write** – Draft section content using gathered context
+5. **Validate** – Critic LLM reviews quality
+6. **Revise Loop** – Rewrites until approved or max retries
+7. **Save & Next** – Move to next section
+8. **Synthesize** – Merge all sections into a final paper
 
 ## 🧠 How It Works
 
