@@ -62,7 +62,7 @@ TAVILY_API_KEY=your_api_key_here
 
 This project uses Ollama to run local Large Language Models (LLMs) for planning, writing, and validation steps.
 
-###🔹 Supported Models
+###🔹 Models used in this project
 
 - qwen3:8b — primary writer model
 
