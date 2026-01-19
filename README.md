@@ -41,7 +41,6 @@ The system automatically generates structured academic seminar reports from user
 - **Python 3.11**
 - **LangGraph**
 - **LangChain**
-- **OpenAI API**
 - **Vector Database (RAG)**
 - **Streamlit**
 
@@ -58,6 +57,21 @@ cp .env.example .env
 Add your keys:
 
 TAVILY_API_KEY=your_api_key_here
+
+## 📦 Ollama Setup (Local LLMs)
+
+This project uses Ollama to run local Large Language Models (LLMs) for planning, writing, and validation steps.
+
+###🔹 Supported Models
+
+- qwen3:8b — primary writer model
+
+- deepseek-r1 — critic / planner model
+
+- 1️⃣ Install Ollama
+- 2️⃣ Start Ollama Server
+- 3️⃣ Pull Required Models
+- 4️⃣ Configure Model Names - The models are configured in .env file
 
 ## 📦 Installation
 
