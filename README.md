@@ -21,6 +21,7 @@ The system automatically generates structured academic seminar reports from user
 
     📦 seminar-report-generator
     ┣ 📂 config # Configuration
+    ┃ ┣ 📜 settings.py
     ┣ 📂 notebooks # Experiments
     ┣ 📂 src # Source code
     ┃ ┣ 📜 graph_builder.py
@@ -31,6 +32,7 @@ The system automatically generates structured academic seminar reports from user
     ┣ 📂 streamlit_app # Web interface
     ┣ 📜 requirements.txt
     ┣ 📜 pyproject.toml
+    ┗ 📜 .env
     ┗ 📜 README.md
 
 
