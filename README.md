@@ -19,22 +19,22 @@ The system automatically generates structured academic seminar reports from user
 
 ## 🏗️ Project Architecture
 
-  SEMINAR_REPORT_GENERATOR
-    ├── config/ # Application settings & configuration
-    │ └── settings.py
-    ├── notebooks/ # Experiments and testing
-    │ └── sample_test.ipynb
-    ├── src/ # Core application logic
-    │ ├── graph_builder.py # LangGraph workflow construction
-    │ ├── nodes.py # Individual graph nodes (LLM calls)
-    │ ├── models.py # LLM & embedding model setup
-    │ ├── prompts.py # Prompt templates
-    │ └── rag_setup.py # Vector store & retrieval logic
-    ├── streamlit_app/ # UI layer
-    │ └── app.py
-    ├── requirements.txt
-    ├── pyproject.toml
-    └── README.md
+SEMINAR_REPORT_GENERATOR
+├── config/ # Application settings & configuration
+│ └── settings.py
+├── notebooks/ # Experiments and testing
+│ └── sample_test.ipynb
+├── src/ # Core application logic
+│ ├── graph_builder.py # LangGraph workflow construction
+│ ├── nodes.py # Individual graph nodes (LLM calls)
+│ ├── models.py # LLM & embedding model setup
+│ ├── prompts.py # Prompt templates
+│ └── rag_setup.py # Vector store & retrieval logic
+├── streamlit_app/ # UI layer
+│ └── app.py
+├── requirements.txt
+├── pyproject.toml
+└── README.md
 
 ---
 
